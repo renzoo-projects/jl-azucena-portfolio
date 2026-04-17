@@ -3,12 +3,12 @@ import { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "JL Azucena — Video Editor",
+  title: "JL Azucena",
   description:
     "Cinematic video editor portfolio showcasing storytelling through motion, color, and sound.",
   metadataBase: new URL("https://your-domain.com"),
   openGraph: {
-    title: "JL Azucena — Video Editor",
+    title: "JL Azucena",
     description:
       "Cinematic video editor portfolio showcasing storytelling through motion, color, and sound.",
     type: "website",

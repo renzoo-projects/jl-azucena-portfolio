@@ -3,7 +3,7 @@ import { Footer } from '@/components/Footer'
 import { Hero } from '@/components/Hero'
 import { Ticker } from '@/components/Ticker'
 import { Stats } from '@/components/Stats'
-import { Work } from '@/components/Work'
+import { Works } from '@/components/Works'
 import { About } from '@/components/About'
 import { Services } from '@/components/Services'
 import { Contact } from '@/components/Contact'
@@ -16,7 +16,7 @@ export default function Home() {
         <Hero />
         <Ticker />
         <Stats />
-        <Work />
+        <Works />
         <About />
         <Services />
         <Contact />

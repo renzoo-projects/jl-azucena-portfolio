@@ -1,18 +1,53 @@
+'use client'
+
 import Link from 'next/link'
+import { motion } from 'framer-motion'
+
+const items = ['Home', 'Works', 'About', 'Services', 'Contact']
 
 export function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center py-5 px-6 md:px-12 bg-brandBlack/85 backdrop-blur-md border-b border-rust/30">
-      <div className="font-bebas text-2xl tracking-[0.15em] text-orange">JL Azucena</div>
+    <motion.nav
+      initial={{ opacity: 0, y: -12 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center py-5 px-6 md:px-12 bg-brandBlack/85 backdrop-blur-md border-b border-rust/30"
+    >
+      {/* LOGO (no underline, clean) */}
+      <motion.div
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1, duration: 0.5 }}
+        className="font-bebas text-2xl tracking-[0.15em] text-orange"
+      >
+        JL Azucena
+      </motion.div>
+
+      {/* LINKS */}
       <ul className="hidden md:flex gap-8 list-none">
-        {['Home', 'Work', 'About', 'Services', 'Contact'].map((item) => (
-          <li key={item}>
-            <Link href={`#${item.toLowerCase()}`} className="text-terra text-xs tracking-[0.12em] uppercase hover:text-orange transition-colors">
+        {items.map((item, i) => (
+          <motion.li
+            key={item}
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.15 + i * 0.05,
+              duration: 0.5,
+              ease: 'easeOut'
+            }}
+          >
+            <Link
+              href={`#${item.toLowerCase()}`}
+              className="relative text-terra text-xs tracking-[0.12em] uppercase transition-colors duration-300 hover:text-orange"
+            >
               {item}
+
+              {/* subtle hover glow only (no underline) */}
+              <span className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300 bg-orange/5 blur-xl rounded-md" />
             </Link>
-          </li>
+          </motion.li>
         ))}
       </ul>
-    </nav>
+    </motion.nav>
   )
 }
