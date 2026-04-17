@@ -5,7 +5,10 @@ import { motion } from 'framer-motion'
 import {
   FaFacebook,
   FaInstagram,
-  FaYoutube
+  FaYoutube,
+  FaLinkedin,
+  FaTiktok,
+  FaWhatsapp
 } from 'react-icons/fa'
 
 import { SiLinktree } from 'react-icons/si'
@@ -64,7 +67,10 @@ export function Contact() {
               { icon: FaFacebook, link: 'https://facebook.com' },
               { icon: FaInstagram, link: 'https://instagram.com' },
               { icon: FaYoutube, link: 'https://youtube.com' },
-              { icon: SiLinktree, link: 'https://linktr.ee' }
+              { icon: FaLinkedin, link: 'https://linkedin.com' },
+              { icon: FaTiktok, link: 'https://tiktok.com' },
+              { icon: FaWhatsapp, link: 'https://whatsapp.com' },
+              { icon: SiLinktree, link: 'https://linktr.ee/jlazucena' }
             ].map((social, i) => {
               const Icon = social.icon
 
