@@ -3,12 +3,12 @@ import { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "JL Azucena",
+  title: "John LLoyd Azucena",
   description:
     "Cinematic video editor portfolio showcasing storytelling through motion, color, and sound.",
   metadataBase: new URL("https://your-domain.com"),
   openGraph: {
-    title: "JL Azucena",
+    title: "John LLoyd Azucena",
     description:
       "Cinematic video editor portfolio showcasing storytelling through motion, color, and sound.",
     type: "website",
@@ -18,13 +18,13 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "JL Azucena Portfolio",
+        alt: "John LLoyd Azucena Portfolio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "JL Azucena — Video Editor",
+    title: "John LLoyd Azucena",
     description:
       "Cinematic video editor portfolio showcasing storytelling through motion, color, and sound.",
     images: ["/og-image.jpg"],
