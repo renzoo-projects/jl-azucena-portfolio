@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 import {
   FaFacebook,
   FaInstagram,
-  FaYoutube,
   FaLinkedin,
   FaTiktok,
   FaWhatsapp
@@ -64,12 +63,11 @@ export function Contact() {
           <div className="flex items-center gap-4 pt-2">
 
             {[
-              { icon: FaFacebook, link: 'https://facebook.com' },
-              { icon: FaInstagram, link: 'https://instagram.com' },
-              { icon: FaYoutube, link: 'https://youtube.com' },
-              { icon: FaLinkedin, link: 'https://linkedin.com' },
-              { icon: FaTiktok, link: 'https://tiktok.com' },
-              { icon: FaWhatsapp, link: 'https://whatsapp.com' },
+              { icon: FaFacebook, link: 'https://facebook.com/jlazucena' },
+              { icon: FaInstagram, link: 'https://instagram.com/jannsou' },
+              { icon: FaLinkedin, link: 'https://www.linkedin.com/in/john-lloyd-azucena-b678402a3/' },
+              { icon: FaTiktok, link: 'https://tiktok.com/@jannsou' },
+              { icon: FaWhatsapp, link: 'https://wa.me/639682101230' },
               { icon: SiLinktree, link: 'https://linktr.ee/jlazucena' }
             ].map((social, i) => {
               const Icon = social.icon

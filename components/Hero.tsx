@@ -12,8 +12,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 
-/* ---------------- ANIMATIONS ---------------- */
-
+// Animation variants
 const container: Variants = {
   hidden: {},
   visible: {
@@ -39,8 +38,7 @@ const fadeLeft: Variants = {
   }
 }
 
-/* ---------------- COMPONENT ---------------- */
-
+// Component
 export function Hero() {
   /* 🔥 Cursor tracking */
   const mouseX = useMotionValue(0)
