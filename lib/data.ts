@@ -6,7 +6,7 @@ export const tickerItems = [
 export const statsData = [
   { num: "3+",  label: "Years of Experience" },
   { num: "15+", label: "Projects Delivered" },
-  { num: "10+", label: "Brands Worked With" },
+  { num: "5+", label: "Clients Worked With" },
   { num: "3M+", label: "Views Generated" },
 ]
 
@@ -15,7 +15,7 @@ export const workItems = [
     size: "col-span-12 md:col-span-7",
     category: "Wedding · 2024",
     title: "Kali + Guissepe Wedding Film",
-    video: "https://player.vimeo.com/video/1184296303?badge=0&autopause=0&player_id=0&app_id=58479",
+    video: "https://www.youtube.com/embed/c6XylbELLi0",
     reference: "https://vimeo.com/1184296303",
     bg: "bg-gradient-to-br from-[#1a0a08] to-rust text-orange/20",
   },
