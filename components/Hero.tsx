@@ -82,7 +82,7 @@ export function Hero() {
   `
 
   return (
-    <section className="relative min-h-screen flex items-center px-6 md:px-12 bg-brandBlack overflow-hidden py-24 lg:py-0">
+    <section id="home" className="relative min-h-screen flex items-center px-6 md:px-12 bg-brandBlack overflow-hidden py-24 lg:py-0">
 
       {/* CURSOR GLOW */}
       <motion.div
