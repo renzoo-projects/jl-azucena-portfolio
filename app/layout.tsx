@@ -6,13 +6,18 @@ export const metadata: Metadata = {
   title: "John LLoyd Azucena",
   description:
     "Cinematic video editor portfolio showcasing storytelling through motion, color, and sound.",
-  metadataBase: new URL("https://your-domain.com"),
+  metadataBase: new URL("https://jlazucena.vercel.app"),
+
+  verification: {
+    google: "SvZRX7Oyf85LZmo_We0bM_ILRafWP9gX9jP5yKvc2xs",
+  },
+
   openGraph: {
     title: "John LLoyd Azucena",
     description:
       "Cinematic video editor portfolio showcasing storytelling through motion, color, and sound.",
     type: "website",
-    url: "https://your-domain.com",
+    url: "https://jlazucena.vercel.app",
     images: [
       {
         url: "/og-image.jpg",
