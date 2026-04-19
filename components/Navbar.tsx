@@ -40,7 +40,7 @@ export function Navbar() {
           >
             <button
               onClick={() => handleScroll(item.toLowerCase())}
-              className="relative text-terra text-xs tracking-[0.12em] uppercase transition-colors duration-300 hover:text-orange"
+              className="cursor-pointer select-none relative text-terra text-xs tracking-[0.12em] uppercase transition-colors duration-300 hover:text-orange active:scale-95"
             >
               {item}
 
